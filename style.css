@@ -13,20 +13,23 @@ body{
 .body{
     display: flex;
     margin: 400px;
-    margin-left: 400px;
+    /* margin-left: 400px; */
     /* margin-left: 300px; */
     height: 450px;
-    width: 46%;
+    width: 40%;
     background-color: #643173;
     /* padding: 100; */
     flex-direction: column;
-    justify-content:center;
-    align-items:center;
+    margin-left: 28%;
+    justify-content:space-between;
+    align-items: center;
     border: 1px;
     border-radius: 20px ;
 }
 .score{
     display: flex;
+    align-items: center;
+    justify-content: cenetr;
     gap : 40px;
     padding: 40px; 
 }
@@ -68,21 +71,27 @@ button{
 }
 .reload{
     display: none;
-    margin-top: 2rem;
-    padding: 1rem;
+    /* margin-top: 2rem; */
+    /* padding: 1rem; */
+    margin: 20px;
+    padding-bottom: 15px;
+    justify-content: space-evenly;
     background: #44234e;
     outline: none;
     border: none;
+    font-size:15px;
+    font-weight: lighter;
     border-radius: 10px;
     cursor: pointer;
 }
 .result{
     text-align: center;
-    margin-top: 20px;
-    cursor: pointer;
+    /* margin-top: 20px; */
+    margin : 20px;
+    /* cursor: pointer; */
     font-size: 1.2rem;
 }
-@media screen and (max-width: 612px)
+@media screen and (max-width: auto)
 { 
     .title{
         text-align: center;

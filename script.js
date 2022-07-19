@@ -91,30 +91,26 @@ function playGame() {
         chooseMove.innerText = 'Game over!';
         movesLeft.style.display = 'none';
         
-        // if (movesLeft == 0) {
-        //     console.log("hey");
             reloadBtn.innerText = 'Play again';
             reloadBtn.style.display = 'flex';
             reloadBtn.style.textAlign = "center";
             reloadBtn.addEventListener('click', function() {
                 window.location.reload();
             })        
-        // }
         if (playerscore == computerscore){
-            result.style.display = '2rem';
+            result.style.display = '25px';
             result.innerText = 'Its a tie, no one won this round';
-            result.style.color = '#308D46';
+            result.style.color = '#232528';
         }
         else if (playerscore > computerscore){
-            result.style.fontSize = '2rem';
+            result.style.fontSize = '25px';
             result.innerText = 'YOU WON THIS GAME!';
-            result.style.color= '#308D46';
+            result.style.color= '#232528';
         }
         else if( playerscore < computerscore){
-            result.style.fontSize = '2rem';
+            result.style.fontSize = '25px';
             result.innerText = 'SADLY YOU LOST ):'
-            result.style.color = '#308D46';
+            result.style.color = '#232528';
         }
     }
-    playGame();
-    // game();
+playGame();
